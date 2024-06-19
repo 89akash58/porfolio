@@ -1,0 +1,397 @@
+body {
+    margin: 5px;
+    height: 100%;
+    width: 100%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-transform: capitalize;
+}
+
+.sub-container {
+    display: flex;
+}
+
+.sidebar {
+    flex: 25%;
+    position: fixed;
+    animation: 4s fadeIn;
+    width: 25%;
+    background-color: rgb(71, 69, 69);
+    text-align: center;
+    height: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.sidebar .profile {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    padding: 10px;
+    margin-top: 10%;
+}
+
+.sidebar h2 {
+    color: white;
+    font-size: 28px;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.sidebar .last {
+    color: aliceblue;
+    font-size: 8px;
+    justify-content: center;
+    text-align: center;
+    line-height: 1;
+    margin: 20px;
+    margin-top: 100px;
+}
+
+.list-group {
+    font-size: 18px;
+    text-align: left;
+    margin: 20px;
+}
+
+.list-group a {
+    text-decoration: none;
+    color: white;
+    margin-left: 10px;
+}
+
+.list-group a:hover {
+    transform: scale(1.1);
+    color: rgb(81, 81, 249);
+}
+
+.list-group a img {
+    height: 20px;
+    width: 20px;
+    margin-top: 20px;
+    margin-right: 20px;
+}
+
+.content {
+    flex: 75%;
+    position: absolute;
+    width: 75%;
+    left: 25%;
+    border-radius: 20%;
+    transition: left 0.3s ease;
+}
+
+.blank {
+    background-image: url(img1.jpg);
+    height: 500px;
+    width: 100%;
+    background-attachment: fixed;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size:cover;
+    opacity: 0.6;
+}
+
+#pro {
+    color: black;
+    font-size: 55px;
+    position: absolute;
+    top: 2%;
+    text-transform: capitalize;
+    left: 10%;
+}
+
+#typewriter {
+    font-size: 30px;
+    position: absolute;
+    text-transform: capitalize;
+    cursor: pointer;
+    left: 0%;
+    top: 100%;
+    font-weight: 800;
+}
+
+.about {
+    margin: 30px;
+    margin-right: 40px;
+    text-align: justify;
+    animation: 5s fadeIn;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+h4 {
+    font-size: 30px;
+    color: rgb(83, 83, 84);
+    text-transform: uppercase;
+}
+
+p {
+    font-size: 18px;
+    color: rgb(2, 2, 2);
+    line-height: 1.5rem;
+}
+
+.profile2 {
+    height: 320px;
+    width: 320px;
+    border-radius: 10px;
+}
+
+.more-about {
+    display: flex;
+    
+}
+
+.left-about {
+    margin-top: 70px;
+    top: 10%;
+}
+
+.right-about {
+    margin-left: 40px;
+}
+
+.skill, .resume {
+    background-color: white;
+    border-radius: 10px;
+}
+
+.allskills {
+    font-size: 18px;
+    color: rgb(2, 2, 2);
+    line-height: 1.5rem;
+    animation: 3s slidein;
+}
+
+ul {
+    line-height: 2em;
+    color: rgb(102, 102, 103);
+}
+
+.pdf {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+}
+
+.pdf, html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.information {
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.contact {
+    background-color: white;
+    border-radius: 10px;
+    flex: 50%;
+    
+}
+
+.message {
+    margin: 20px;
+    margin-left: 0;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.message label {
+    color: black;
+    font-weight: 600;
+    padding: 10px;
+    margin: 10px;
+}
+
+.message .field {
+    height: 25px;
+    width: 60%;
+}
+
+.message .area {
+    height: 100px;
+    width: 400px;
+}
+
+#submit {
+    text-align: center;
+    width: 60%;
+    color: black;
+    background-color: transparent;
+    padding: 10px;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#submit:hover {
+    cursor: pointer;
+    color: white;
+    background-color: black;
+    transform: scale(1.1);
+}
+
+@keyframes slidein {
+    from {
+        margin-left: 100%;
+        width: 300%;
+    }
+    to {
+        margin-left: 0%;
+        width: 100%;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
+
+@keyframes cursor-blink {
+    0% {
+        opacity: 0;
+    }
+}
+
+.fa {
+    padding: 5px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 5px;
+}
+
+.fa:hover {
+    background-color: black;
+}
+
+.fa-twitter {
+    background-color: white;
+    color: rgb(20, 153, 241);
+}
+
+.fa-google {
+    background-color: rgb(252, 23, 23);
+    color: white;
+}
+
+.fa-linkedin {
+    background-color: rgb(21, 21, 249);
+    color: white;
+}
+
+.fa-github {
+    background-color: rgb(28, 25, 25);
+    color: grey;
+}
+
+.mynotesimg {
+    height: 100%;
+    width: 100%;
+}
+
+video {
+    height: 100%;
+    width: 100%;
+}
+
+.visit {
+    text-decoration: none;
+    font-size: 20px;
+    background-color: none;
+}
+
+/* Media Queries for Mobile and Tablet */
+@media screen and (max-width: 1024px) {
+    .sidebar {
+        display: none;
+    }
+    .content {
+        width: 100%;
+        left: 0;
+        padding: 10px;
+        border-radius: 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .more-about {
+        flex-direction: column;
+    }
+    .about {
+        margin: 10px;
+    }
+    .left-about, .right-about {
+        margin: 10px;
+    }
+    .blank {
+        height: 500px;
+        background-size:contain;
+    }
+    .information{
+        display: block;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #pro {
+        font-size: 35px;
+        left: 5%;
+    }
+
+     #typewriter {
+        font-size: 20px;
+        left: 0%;
+        top: 100%;
+    } 
+    .content {
+        padding: 5px;
+    }
+    .message .field, .message .area {
+        width: 90%;
+    }
+    #submit {
+        width: 90%;
+        font-size: 18px;
+    }
+}
+/* Sidebar and Hamburger Button */
+
+/* Sidebar */
+
+.hamburger {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+    margin: 20px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .hamburger {
+        display: block;
+    }
+    .sidebar {
+        transform: translateX(-100%);
+    }
+    .sidebar.open {
+        transform: translateX(0);
+    }
+    .content {
+        margin-left: 0;
+    }
+}
